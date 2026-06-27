@@ -3,30 +3,19 @@
     "name": "SplitUpFair",
     "slug": "splitupfair",
     "version": "1.0.0",
+    "icon": "./assets/logo-nude.png",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "splash": {
-      "backgroundColor": "#f7f6f1"
-    },
-    "ios": {
-      "supportsTablet": false,
-      "bundleIdentifier": "com.splitupfair.app"
-    },
+    "splash": { "image": "./assets/logo-nude.png", "resizeMode": "contain", "backgroundColor": "#f6eee8" },
+    "ios": { "supportsTablet": false, "bundleIdentifier": "com.splitupfair.app" },
     "android": {
       "package": "com.splitupfair.app",
-      "permissions": [
-        "CAMERA"
-      ]
+      "permissions": ["CAMERA"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo-nude.png",
+        "backgroundColor": "#e8d8cd"
+      }
     },
-    "plugins": [
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "Choose a receipt to split.",
-          "cameraPermission": "Take a photo of a receipt to split."
-        }
-      ],
-      "expo-status-bar"
-    ]
+    "plugins": [["expo-image-picker", { "photosPermission": "Choose a receipt to split.", "cameraPermission": "Take a photo of a receipt to split." }]]
   }
 }

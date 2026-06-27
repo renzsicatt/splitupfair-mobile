@@ -3,7 +3,7 @@ import { ActivityIndicator, Alert, Image, Platform, Pressable, SafeAreaView, Scr
 import { StatusBar } from "expo-status-bar";
 import * as ImagePicker from "expo-image-picker";
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:4000";
+const API_URL = process.env.EXPO_PUBLIC_API_URL || "https://splitupfair-backend-production.up.railway.app";
 const colors = ["#b8755f", "#d9aaa0", "#c4937f", "#a98b7c", "#e0b9a8"];
 const uid = () => `${Date.now()}-${Math.random()}`;
 const peso = value => new Intl.NumberFormat("en-PH", { style: "currency", currency: "PHP" }).format(Number(value || 0));

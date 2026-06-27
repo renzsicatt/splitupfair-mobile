@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "SplitUpFair",
+    "slug": "splitupfair",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#f7f6f1"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.splitupfair.app"
+    },
+    "android": {
+      "package": "com.splitupfair.app",
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a receipt to split.",
+          "cameraPermission": "Take a photo of a receipt to split."
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
